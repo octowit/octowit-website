@@ -1,9 +1,6 @@
 import { Home, Profile, SignIn, SignUp } from "@/pages";
 import {
-  HomeIcon,
   UserCircleIcon,
-  ArrowRightOnRectangleIcon,
-  UserPlusIcon,
   DocumentTextIcon,
   ArrowTopRightOnSquareIcon,
   AcademicCapIcon,
@@ -20,28 +17,28 @@ export const routes = [
   {
     icon: UserCircleIcon,
     name: "Team",
-    path: "/profile",
-    element: <Profile />,
+    path: "/home",
+    element: <Home />,
   },
   {
     icon: StarIcon,
     name: "Testimonial",
-    path: "/sign-in",
-    element: <SignIn />,
+    path: "/home",
+    element: <Home />,
   },
   {
     icon: DocumentTextIcon,
     name: "Blog",
-    path: "/sign-up",
-    element: <SignUp />,
+    path: "/home",
+    element: <Home />,
   },
   {
     icon: ArrowTopRightOnSquareIcon,
     name: "DeepTuned.ai",
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "http://deeptuned.ai/",
     target: "_blank",
     element: "",
-  },
+  }
 ];
 
 export default routes;

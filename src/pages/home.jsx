@@ -117,7 +117,7 @@ export function Home() {
           <PageTitle heading="Our Team">
           Our exceptional team of AI experts possesses an unparalleled level of skill and dedication, constantly striving to exceed expectations and deliver groundbreaking solutions that revolutionize the industry.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-3 xl:grid-cols-3">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
@@ -126,10 +126,10 @@ export function Home() {
                 position={position}
                 socials={
                   <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
+                    {socials.map(({ color, name, url }) => (
+                      <a href={url}><IconButton key={name} color={color} variant="text">
                         <i className={`fa-brands text-lg fa-${name}`} />
-                      </IconButton>
+                      </IconButton></a>
                     ))}
                   </div>
                 }

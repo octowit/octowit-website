@@ -1,6 +1,4 @@
 import {
-  StarIcon,
-  ArrowPathIcon,
   FingerPrintIcon,
   LightBulbIcon,
   RocketLaunchIcon,
