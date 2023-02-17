@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "octowit-website/img/ankits.jpg",
+    img: "img/ankits.jpg",
     name: "Ankit Sharma",
     position: "Co-Founder",
     socials: [
@@ -17,7 +17,7 @@ export const teamData = [
     ],
   },
   {
-    img: "octowit-website/img/ankitg.jpg",
+    img: "img/ankitg.jpg",
     name: "Ankit Goyal",
     position: "Co-Founder",
     socials: [
@@ -34,7 +34,7 @@ export const teamData = [
     ],
   },
   {
-    img: "octowit-website/img/rampi.jpg",
+    img: "img/rampi.jpg",
     name: "Ram Prakash H",
     position: "Advisor",
     socials: [
@@ -51,7 +51,7 @@ export const teamData = [
     ],
   },
   {
-    img: "octowit-website/img/robot.png",
+    img: "img/robot.png",
     name: "Robot X",
     position: "Advisor",
     socials: [

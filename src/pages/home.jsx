@@ -105,7 +105,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="px-4 pt-20 pb-48 bg-black/90">
+      <section id="team" className="px-4 pt-20 pb-48 bg-black/90">
         <div className="container mx-auto">
           <PageTitle heading="Our Team" mode="dark">
           Our exceptional team of AI experts possesses an unparalleled level of skill and dedication, constantly striving to exceed expectations and deliver groundbreaking solutions that revolutionize the industry.
@@ -133,7 +133,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="relative py-24 px-4 bg-blue-gray-50/50">
+      <section id="services" className="relative py-24 px-4 bg-blue-gray-50/50">
         <div className="container mx-auto">
           <PageTitle heading="Let's Build Something Cool">
           With our ability to tackle unique, complex problems and our arsenal of readily available, cutting-edge solutions, partnering with us means unlocking unparalleled potential and leaving the competition in the dust.
@@ -185,7 +185,7 @@ export function Home() {
         </div>
       </section>
       
-      <div className="bg-blue-gray-50/50">
+      <div id="contact" className="bg-blue-gray-50/50">
         <Contact />
       </div>
 

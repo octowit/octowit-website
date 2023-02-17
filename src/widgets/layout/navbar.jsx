@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -115,14 +116,11 @@ export function Navbar({ brandName, routes, action }) {
 Navbar.defaultProps = {
   brandName: "OCTOWIT.AI",
   action: (
-    <a
-      href="#"
-      target="_blank"
-    >
+    <Link to="/home#contact">
       <Button variant="gradient" size="sm" fullWidth>
-        Contact Us
+        Contact Us!
       </Button>
-    </a>
+    </Link>
   ),
 };
 
