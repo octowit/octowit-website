@@ -31,7 +31,7 @@ export function Home() {
               <Typography
                 variant="h1"
                 color="white"
-                className="text-7xl mb-6 leading-tight bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
+                className="text-6xl mb-6 leading-tight bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
               >
                 Empower Your Business Now with Cutting-Edge AI
               </Typography>
@@ -110,7 +110,7 @@ export function Home() {
           <PageTitle heading="Our Team" mode="dark">
           Our exceptional team of AI experts possesses an unparalleled level of skill and dedication, constantly striving to exceed expectations and deliver groundbreaking solutions that revolutionize the industry.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}

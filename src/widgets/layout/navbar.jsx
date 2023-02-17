@@ -102,15 +102,7 @@ export function Navbar({ brandName, routes, action }) {
       >
         <div className="container mx-auto">
           {navList}
-          <a
-            href="#"
-            target="_blank"
-            className="mb-2 block"
-          >
-            <Button variant="text" size="sm" fullWidth>
-              Contact Us
-            </Button>
-          </a>
+          
           {React.cloneElement(action, {
             className: "w-full block",
           })}
