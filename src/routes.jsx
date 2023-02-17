@@ -32,13 +32,13 @@ export const routes = [
     path: "/home",
     element: <Home />,
   },
-  {
-    icon: ArrowTopRightOnSquareIcon,
-    name: "DeepTuned.ai",
-    href: "http://deeptuned.ai/",
-    target: "_blank",
-    element: "",
-  }
+  // {
+  //   icon: ArrowTopRightOnSquareIcon,
+  //   name: "DeepTuned.ai",
+  //   href: "http://deeptuned.ai/",
+  //   target: "_blank",
+  //   element: "",
+  // }
 ];
 
 export default routes;

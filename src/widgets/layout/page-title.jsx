@@ -19,7 +19,7 @@ export function PageTitle({ heading, mode, children }) {
 PageTitle.propTypes = {
   heading: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  mode: "light",
+  mode: PropTypes.string.isRequired,
 };
 
 PageTitle.displayName = "/src/widgets/layout/page-title.jsx";

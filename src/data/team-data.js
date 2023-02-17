@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "/img/ankits.jpg",
+    img: "octowit-website/img/ankits.jpg",
     name: "Ankit Sharma",
     position: "Co-Founder",
     socials: [
@@ -17,7 +17,7 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/ankitg.jpg",
+    img: "octowit-website/img/ankitg.jpg",
     name: "Ankit Goyal",
     position: "Co-Founder",
     socials: [
@@ -33,23 +33,8 @@ export const teamData = [
       }
     ],
   },
-  // {
-  //   img: "/img/team-3.jpg",
-  //   name: "Ayush Jain",
-  //   position: "Co-Founder",
-  //   socials: [
-  //     {
-  //       color: "light-blue",
-  //       name: "twitter",
-  //     },
-  //     {
-  //       color: "blue",
-  //       name: "linkedin",
-  //     }
-  //   ],
-  // },
   {
-    img: "/img/rampi.jpg",
+    img: "octowit-website/img/rampi.jpg",
     name: "Ram Prakash H",
     position: "Advisor",
     socials: [
@@ -62,6 +47,21 @@ export const teamData = [
         color: "blue",
         name: "linkedin",
         url: "https://www.linkedin.com/in/ram-prakash-h-0557826/",
+      }
+    ],
+  },
+  {
+    img: "octowit-website/img/robot.png",
+    name: "Robot X",
+    position: "Advisor",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
       }
     ],
   },

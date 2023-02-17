@@ -21,7 +21,9 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+    
         <div className="absolute top-0 h-full w-full bg-[url('https://scitechdaily.com/images/AI-Technology-Creation-Concept.gif')] bg-cover bg-center" />
+        
         <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -29,9 +31,9 @@ export function Home() {
               <Typography
                 variant="h1"
                 color="white"
-                className="text-6xl mb-6 bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
+                className="text-7xl mb-6 leading-tight bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
               >
-                Empower Your Business Now with Cutting-Edge AI.
+                Empower Your Business Now with Cutting-Edge AI
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
                 Your AI partner in your success
@@ -102,28 +104,20 @@ export function Home() {
           </div>
         </div>
       </section>
-      
-      <section className="relative py-24 px-4 bg-black/90">
-      <div className="">
-        <PageTitle heading="What we do" mode="dark">
-        Octowit AI offers support to companies in developing AI and ML solutions at every phase, starting from initial trials to the final production stage. Our team provides strategic planning, consulting, and engineering services to help turn your concepts into reality with cutting-edge AI technologies. By leveraging our AI-powered digital transformation capabilities, you can stay ahead in the competitive business landscape.
-        </PageTitle>
-        <Capabilities mode="dark"/>
-      </div>
-      </section>
 
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-48 bg-black/90">
         <div className="container mx-auto">
-          <PageTitle heading="Our Team">
+          <PageTitle heading="Our Team" mode="dark">
           Our exceptional team of AI experts possesses an unparalleled level of skill and dedication, constantly striving to exceed expectations and deliver groundbreaking solutions that revolutionize the industry.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-3 xl:grid-cols-3">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
+                mode="dark"
                 socials={
                   <div className="flex items-center gap-2">
                     {socials.map(({ color, name, url }) => (
@@ -138,6 +132,7 @@ export function Home() {
           </div>
         </div>
       </section>
+
       <section className="relative py-24 px-4 bg-blue-gray-50/50">
         <div className="container mx-auto">
           <PageTitle heading="Let's Build Something Cool">
@@ -178,6 +173,15 @@ export function Home() {
               Send Message
             </Button>
           </form> */}
+        </div>
+      </section>
+
+      <section className="relative py-24 px-4">
+        <div className="">
+          <PageTitle heading="What we do" mode="light">
+          Octowit AI offers support to companies in developing AI and ML solutions at every phase, starting from initial trials to the final production stage. Our team provides strategic planning, consulting, and engineering services to help turn your concepts into reality with cutting-edge AI technologies. By leveraging our AI-powered digital transformation capabilities, you can stay ahead in the competitive business landscape.
+          </PageTitle>
+          <Capabilities mode="light"/>
         </div>
       </section>
       

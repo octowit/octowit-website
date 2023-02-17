@@ -1,16 +1,20 @@
 import PropTypes from "prop-types";
 import { Card, Avatar, Typography } from "@material-tailwind/react";
 
-export function TeamCard({ img, name, position, socials }) {
+export function TeamCard({ img, name, position, mode, socials }) {
+
+  const textColor = (mode == "light") ? "blue-gray" : "text-blue-100/50";
+  const shadowColor = (mode == "light") ? "shadow-gray-500/25" : "shadow-gray-900/25";
+
   return (
     <Card color="transparent" shadow={false} className="text-center">
       <Avatar
         src={img}
         alt={name}
         size="xxl"
-        className="rounded-full h-full w-full shadow-lg shadow-gray-500/25"
+        className={`rounded-full h-full w-full shadow-lg ${shadowColor}`}
       />
-      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1">
+      <Typography variant="h5" className={`mt-6 mb-1 ${textColor}`}>
         {name}
       </Typography>
       {position && (
