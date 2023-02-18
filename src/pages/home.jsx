@@ -31,7 +31,7 @@ export function Home() {
               <Typography
                 variant="h1"
                 color="white"
-                className="text-6xl mb-6 leading-tight bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
+                className="text-6xl sm-md:text-2xl mb-6 leading-tight bg-gradient-to-r from-blue-200 via-green-500 to-indigo-600 inline-block text-transparent bg-clip-text"
               >
                 Empower Your Business Now with Cutting-Edge AI
               </Typography>
@@ -110,7 +110,7 @@ export function Home() {
           <PageTitle heading="Our Team" mode="dark">
           Our exceptional team of AI experts possesses an unparalleled level of skill and dedication, constantly striving to exceed expectations and deliver groundbreaking solutions that revolutionize the industry.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 grid-cols-2 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
@@ -139,14 +139,14 @@ export function Home() {
           With our ability to tackle unique, complex problems and our arsenal of readily available, cutting-edge solutions, partnering with us means unlocking unparalleled potential and leaving the competition in the dust.
           </PageTitle>
           <div className="mx-auto mt-20 mb-2 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
+            {contactData.map(({ title, icon, icon_color, description }) => (
               <Card
                 key={title}
                 color="transparent"
                 shadow={false}
-                className="text-center text-blue-gray-900"
+                className="text-center text-blue-gray-900 p-10 bg-blue-gray-50"
               >
-                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
+                <div className={`mx-auto mb-6 grid h-14 w-14 ${icon_color} place-items-center rounded-full shadow-lg shadow-gray-500/20`}>
                   {React.createElement(icon, {
                     className: "w-5 h-5",
                   })}
